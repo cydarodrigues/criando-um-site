@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.cabeca{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 15vh;
+}
+
+.logo .h2-logo, .link-h2{
+    letter-spacing: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s ease-in-out;
+}
+
+.h2-logo:hover, .link-h2:hover{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.nav-listas .ul-listas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.li-lista-link, .a-link-list{
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+    transition: 0.6s ease-in-out;
+}
+
+.li-lista-link:hover, .a-link-list:hover{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.menu-icone{
+    display: none;
+}
+
+#menu-icon{
+    font-size: 30px;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+#menu-icon:hover{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+@media (max-width: 600px){
+    .nav-listas{
+        display: none;
+    }
+    .menu-icone{
+        display: flex;
+    }
+}
+
